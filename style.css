@@ -1,0 +1,111 @@
+/* General body settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Dark text */
+    background-color: #f5f5f5; /* Light background */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Full viewport height */
+}
+
+/* Card customization */
+.card {
+    background: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4.1rem;
+}
+
+.card.header {
+    background: #17a2b8; /* Material blue */
+    color: #fff; /* White text */
+    padding: 20px 14rem;
+    text-align: center;
+}
+
+.card.body {
+    padding: 20px;
+}
+
+/* Styling headers */
+h1 {
+    font-size: 1.75rem; /* Larger font size for header */
+    margin-bottom: 0; /* Remove margin bottom */
+}
+
+/* Form element customization */
+.form-group {
+    margin-top: 20px;
+}
+
+.label, select, input[type="text"], button {
+    font-size: 16px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #17a2b8; /* Material blue */
+}
+
+/* Button styling */
+button {
+    background-color: #17a2b8; /* Material blue */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px; /* Larger font size */
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #101b1c; /* Darker blue on hover */
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-group {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-top: 0rem;
+    }
+
+    .card.header {
+        padding: 20px;
+    }
+
+    .container {
+        padding-top: 1rem;
+    }
+}
